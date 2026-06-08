@@ -21,7 +21,23 @@ h1{
 .player{
     margin-top:50px;
 }
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:15px;
+    max-width:1000px;
+    margin:40px auto;
+}
 
+.gallery img{
+    width:100%;
+    border-radius:12px;
+    transition:0.3s;
+}
+
+.gallery img:hover{
+    transform:scale(1.03);
+}
 audio{
     width:90%;
     max-width:500px;
@@ -32,6 +48,19 @@ audio{
 <body>
 
 <h1>漫游的梦想家 · 音乐馆</h1>
+<div class="gallery">
+<img src="01.PNG">
+<img src="02.PNG">
+<img src="03.PNG">
+
+<img src="04.PNG">
+<img src="05.PNG">
+<img src="06.PNG">
+
+<img src="07.PNG">
+<img src="08.PNG">
+<img src="09.PNG">
+</div>
 
 <p>Wandering Dreamer Music Space</p>
 
