@@ -127,7 +127,7 @@
         </div>
 
         <!-- Mobile Nav Menu -->
-        <div id="mobileMenu" class="md:hidden absolute top-full left-0 w-full z-[9999] bg-dreamDeep bg-opacity-95 backdrop-blur-lg border-b border-gray-800 transition-all duration-300" id="mobileMenu">
+        <div id="mobileMenu" class="hidden md:hidden absolute top-full left-0 w-full z-[9999] bg-dreamDeep bg-opacity-95 backdrop-blur-lg border-b border-gray-800 transition-all duration-300" id="mobileMenu">
             <div class="flex flex-col space-y-4 px-6 py-8 text-center tracking-widest text-base">
                 <a href="#home" class="mob-link text-gray-300 hover:text-dreamGold" onclick="toggleMenu()">HOME</a>
                 <a href="#music" class="mob-link text-gray-300 hover:text-dreamGold" onclick="toggleMenu()">MUSIC</a>
@@ -668,13 +668,14 @@
         const mobileMenu = document.getElementById('mobileMenu');
 
         function toggleMenu() {
-            mobileMenu.classList.toggle('hidden');
-            if(mobileMenu.classList.contains('hidden')) {
-                menuIcon.className = 'fa-solid fa-bars text-2xl';
-            } else {
-                menuIcon.className = 'fa-solid fa-xmark text-2xl';
-            }
-        }
+    if (mobileMenu.classList.contains('hidden')) {
+        mobileMenu.classList.remove('hidden');
+        menuIcon.className = 'fa-solid fa-xmark text-2xl';
+    } else {
+        mobileMenu.classList.add('hidden');
+        menuIcon.className = 'fa-solid fa-bars text-2xl';
+    }
+}
         menuBtn.addEventListener('click', toggleMenu);
 
         // Interactive Playlist Simulation
