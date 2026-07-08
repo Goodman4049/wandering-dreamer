@@ -12,6 +12,7 @@ This project follows a careful archive-first approach:
 
 ### Added
 
+- Added the Earth Journal entry `昆明续雨` dated `2026.07.08` to `earth.html`.
 - Initialized `CHANGELOG.md` to track future website updates.
 
 ### Changed
@@ -21,6 +22,10 @@ This project follows a careful archive-first approach:
 ### Fixed
 
 - None.
+
+### Files
+
+- `earth.html`
 
 ## Entry Format
 
