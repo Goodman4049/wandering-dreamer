@@ -12,6 +12,7 @@ This project follows a careful archive-first approach:
 
 ### Added
 
+- Added the Mars Journal entry `火星下雨了` dated `2026.07.08` to `mars-journal.html`.
 - Added the Earth Journal entry `昆明续雨` dated `2026.07.08` to `earth.html`.
 - Initialized `CHANGELOG.md` to track future website updates.
 
@@ -25,6 +26,7 @@ This project follows a careful archive-first approach:
 
 ### Files
 
+- `mars-journal.html`
 - `earth.html`
 
 ## Entry Format
