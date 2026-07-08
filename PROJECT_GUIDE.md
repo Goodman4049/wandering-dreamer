@@ -160,6 +160,7 @@ Wait for confirmation before making major structural changes.
 10. 不删除或覆盖历史内容，除非用户明确要求。
 11. 所有新增内容都遵循网站现有格式和排版规范。
 12. 如发现异常、冲突或不确定之处，先说明原因，再等待用户确认后修改。
+13. 未经用户确认，不执行 Commit 或 Push；修改完成后等待用户确认，再提交到 GitHub。
 
 ---
 
